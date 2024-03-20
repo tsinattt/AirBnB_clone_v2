@@ -8,9 +8,9 @@ class TestConsoleMySQL(unittest.TestCase):
     def setUp(self):
         """Set up MySQL connection and create a test database."""
         self.db = MySQLdb.connect(host="localhost",
-                                  user="your_mysql_user",
-                                  passwd="your_mysql_password",
-                                  db="your_test_database")
+                                  user="hbnb_dev",
+                                  passwd="hbnb_dev_pwd",
+                                  db="hbnb_dev_db")
         self.cursor = self.db.cursor()
 
     def tearDown(self):
